@@ -9,7 +9,7 @@ RUN cmake .. -DCMAKE_INSTALL_PREFIX=/install
 RUN make -j8
 RUN make install
 
-RUN clang++ /repo/mayhem/fuzz_initialize_from_text.cpp -fsanitize=fuzzer,address -I /install/include/ -I /usr/include/eigen3/ /install/lib/libPoseLib.a -o /fuzz
+RUN clang++ /repo/mayhem/fuzz_initialize_from_txt.cpp -fsanitize=fuzzer,address -I /install/include/ -I /usr/include/eigen3/ /install/lib/libPoseLib.a -o /fuzz
 
 FROM ubuntu:22.04 as package
 

@@ -60,7 +60,7 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-          - mayhem/Mayhemfile_initialize_from_text
+          - mayhem/Mayhemfile_initialize_from_txt
 
     steps:
       - uses: actions/checkout@v3
