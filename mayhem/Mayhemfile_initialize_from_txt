@@ -1,0 +1,5 @@
+project: poselib
+target: initialize-from-text
+cmds:
+  - cmd: /fuzz_initialize_from_text
+    libfuzzer: true
